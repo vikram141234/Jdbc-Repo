@@ -17,20 +17,20 @@ public class LaunchingBrowser {
 		
 		//Step-1:Register driver
 		
-		Driver driver=new Driver();
-		DriverManager.registerDriver(driver);
+		Driver driverRef=new Driver();
+		DriverManager.registerDriver(driverRef);
 		
-		//Step-2:Give the connectionj to the Data Base
-		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/weekendbatch ","root","root");
+		//Step-2:Give the connection to the Data Base          Database Name               uName    Psd
+		Connection conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/vikram","root","vikram1412");
 	    
 		//Step-3:Create Sql Statement
 		Statement stat = conn.createStatement();
-		String query="select * from student";
-		
+		String query="select * from Nani";
+		                             //Table-Name
 		//Step-4:Execute Query
 		ResultSet result = stat.executeQuery(query);
 		
-		while(result.next())
+	while(result.next())
 		{
 			System.out.println(result.getInt(1)+"\t"+result.getString(2)+"\t"+result.getString(3));
 		}

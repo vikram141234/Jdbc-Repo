@@ -12,6 +12,8 @@
     <version>8.0.28</version>
 </dependency>
 
+<!--Below 2 dependencies added by Gvc for Browser Launching-->
+
       <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -23,8 +25,9 @@
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>5.3.2</version>
+    <version>5.1.0</version>
 </dependency>
+
 
 
 	  
